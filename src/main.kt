@@ -1,11 +1,9 @@
 fun main() {
 
     // here the functions will be called only
-
     aboutProject()
     startProgram()
-    mainMenu()
-    runUtil()
+    util()
 }
 
 fun aboutProject() {

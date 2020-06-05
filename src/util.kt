@@ -1,15 +1,15 @@
 import java.util.*
 
-val reader = Scanner(System.`in`)
 var carParking = VehicleParking()
 var bikeParking = VehicleParking()
 var scooterParking = VehicleParking()
 
-fun runUtil() {
+val reader = Scanner(System.`in`)
 
+fun util() {
     loop@ while (true) {
         mainMenu()
-        println("\n>")
+        print(">")
         when (reader.nextInt()) {
             1 -> carParkingLoop()
             2 -> bikeParkingLoop()
@@ -21,9 +21,9 @@ fun runUtil() {
 }
 
 fun carParkingLoop() {
-
+    println("\nWelcome to Car Parking\n")
     loop1@ while (true) {
-        println(">")
+        print(">")
         when (reader.next()) {
             "create" -> {
                 val n = reader.nextInt()
@@ -89,9 +89,9 @@ fun carParkingLoop() {
 }
 
 fun bikeParkingLoop() {
-
+    println("\nWelcome to Bike Parking\n")
     loop2@ while (true) {
-        println(">")
+        print(">")
         when (reader.next()) {
             "create" -> {
                 val n = reader.nextInt()
@@ -157,9 +157,9 @@ fun bikeParkingLoop() {
 }
 
 fun scooterParkingLoop() {
-
+    println("\nWelcome to Scooter Parking\n")
     loop3@ while (true) {
-        println(">")
+        print(">")
         when (reader.next()) {
             "create" -> {
                 val n = reader.nextInt()
