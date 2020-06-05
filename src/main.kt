@@ -43,6 +43,7 @@ fun startProgram() {
         |for one section at a time. Ex: If you are working with the Cars section of parking then all
         |the available commands will work for Cars only. you need to exit car section to access other section.
         |
+        |Please note enter text or choice after > this symbol
         |(You will also get option to see the commands with the section and exit options)
     """.trimMargin()
     )
