@@ -25,15 +25,15 @@ Whole project runs on function calls, and we have used Scanner class.
 
 ## Screenshots
 #### String Templates
-![STRING_TEMPLATES](https://github.com/sagargkr/ParkingLot/blob/master/images/string_templates_example.png?raw=true)
+![STRING_TEMPLATES](https://github.com/sagargkr/ParkingLot/blob/master/images/string_templates_example.png)
 
 #### DataClass & Inheritance
-![DATA_CLASS_AND_INHERITANCE](https://github.com/sagargkr/ParkingLot/blob/master/images/dataclass_and_inheritance.png?raw=true)
+![DATA_CLASS_AND_INHERITANCE](https://github.com/sagargkr/ParkingLot/blob/master/images/dataclass_and_inheritance.png)
 
 #### Programming Running!
-![Screenshot_1](https://github.com/sagargkr/ParkingLot/blob/master/images/play_ss_1.png?raw=true)
-![Screenshot_2](https://github.com/sagargkr/ParkingLot/blob/master/images/play_ss_2.png?raw=true)
-![Screenshot_3](https://github.com/sagargkr/ParkingLot/blob/master/images/play_ss_3.png?raw=true)
+![Screenshot_1](https://github.com/sagargkr/ParkingLot/blob/master/images/play_ss_1.png)
+![Screenshot_2](https://github.com/sagargkr/ParkingLot/blob/master/images/play_ss_2.png)
+![Screenshot_3](https://github.com/sagargkr/ParkingLot/blob/master/images/play_ss_3.png)
 
 ## License
 ```
