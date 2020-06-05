@@ -11,12 +11,14 @@ data class Car(override val number: String,override val color: String) : Vehicle
 
 data class Bike(override val number: String,override val color: String) : Vehicle(number, color)
 
-data class Scooty(override val number: String,override val color: String) : Vehicle(number, color)
+data class Scooter(override val number: String,override val color: String) : Vehicle(number, color)
 
-class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
+class VehicleParking(private val amountOfSpots: Int = 0, private val type: String = "") {
 
+    //  parking list
     private val parking: MutableMap<Int, Vehicle> = mutableMapOf()
 
+    //  list of free spots to park vehicle in ascending order
     private fun getFreeSpot(): Int{
         for (i in 1..parking.size+1){
             if (parking.containsKey(i)){
@@ -28,6 +30,7 @@ class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
         return 0
     }
 
+    // to park a vehicle
     fun park(vehicle: Vehicle): Int{
         val freeSpot = getFreeSpot()
         if (freeSpot > amountOfSpots) return 0
@@ -35,6 +38,7 @@ class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
         return freeSpot
     }
 
+    // to free up a spot
     fun leave(spot: Int): Boolean {
         return if (parking.containsKey(spot)){
             parking.remove(spot)
@@ -44,10 +48,12 @@ class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
         }
     }
 
+    // to check if parking space is initialised or not
     fun amountOfSpotsAvailable(): Boolean {
         return amountOfSpots == 0
     }
 
+    // to know about parked vehicle
     fun parkedVehicle() {
         if (parking.isEmpty()){
             println("Parking lot is empty.")
@@ -58,6 +64,7 @@ class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
         }
     }
 
+    // to know about reg no of vehicles that are parked
     fun regByColor(string: String){
         val regList: MutableList<String> = ArrayList()
         for (i in parking.keys) {
@@ -72,6 +79,7 @@ class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
         }
     }
 
+    // to know about spots occupied by a same color vehicles that are parked
     fun spotByColor(string: String){
         val spotList: MutableList<Int> = ArrayList()
         for (i in parking.keys) {
@@ -85,7 +93,7 @@ class VehicleParking(private val amountOfSpots: Int = 0, val type: String) {
             println(spotList.joinToString(separator = ", "))
         }
     }
-
+    // to know about spot occupied by a vehicle that is parked
     fun spotByReg(string: String){
         val spotList: MutableList<Int> = ArrayList()
         for (i in parking.keys) {
