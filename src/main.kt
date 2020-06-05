@@ -5,6 +5,7 @@ fun main() {
     aboutProject()
     startProgram()
     mainMenu()
+    runUtil()
 }
 
 fun aboutProject() {
