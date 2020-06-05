@@ -50,7 +50,7 @@ fun carParkingLoop() {
         when (reader.next()) {
             "create" -> {
                 val n = reader.nextInt()
-                carParking = VehicleParking(n, "car")
+                carParking = VehicleParking(n, "Car")
                 println("Created car parking lot with $n spots.")
             }
             "park" -> {
@@ -118,7 +118,7 @@ fun bikeParkingLoop() {
         when (reader.next()) {
             "create" -> {
                 val n = reader.nextInt()
-                bikeParking = VehicleParking(n, "car")
+                bikeParking = VehicleParking(n, "Bike")
                 println("Created car parking lot with $n spots.")
             }
             "park" -> {
@@ -186,7 +186,7 @@ fun scooterParkingLoop() {
         when (reader.next()) {
             "create" -> {
                 val n = reader.nextInt()
-                scooterParking = VehicleParking(n, "car")
+                scooterParking = VehicleParking(n, "Scooter")
                 println("Created car parking lot with $n spots.")
             }
             "park" -> {
